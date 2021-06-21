@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="OrangeHRM smoke(failed)">
+    <classes>
+      <class name="com.orangehrm.test.LoginTest">
+        <methods>
+          <include name="login"/>
+          <include name="open_browser"/>
+          <include name="invalid_pass"/>
+          <include name="closeBrowaser"/>
+          <include name="login_invalid_text"/>
+        </methods>
+      </class> <!-- com.orangehrm.test.LoginTest -->
+    </classes>
+  </test> <!-- OrangeHRM smoke(failed) -->
+</suite> <!-- Failed suite [Smoke Suite] -->

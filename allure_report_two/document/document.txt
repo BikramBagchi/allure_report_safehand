@@ -1,0 +1,41 @@
+                            Allure Report Generation
+
+Step 1  : Maven should be Install (my system maven version 3.6.3) need to add maven to environment varible path
+Step 2  : Need to add allure binaries in your system
+          (link - https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/)
+          Need to add the path of inside bin folder in environment varible path
+Step 3  : To check environment allure version  use - allure --version (2.13.0 is what I have use)
+Step 4  : Need to add 1 dependency in pom.xml 
+
+   <dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-testng</artifactId>
+    <version>2.13.0</version>
+   </dependency>
+   
+Step 5  : Run the @Test from testng.xml file 
+Step 6  : Once run complete Refresh the project (you will find allure-results folder in project)
+Step 7  : Copy the allure-results path (My path -  H:\allure_report_one\allure-results)
+Step 8  : Open CMD 
+Step 9  : Made Chrome as default browser 
+Step 10 : type -  allure serve H:\allure_report_two\allure-results
+
+********************************************************************************************************************************************************************
+
+                     Annotation In  Allure Report
+                     
+                     
+1)    @Description ("Verify login") 
+2)    @Epic("1001")
+3)    @Feature("Feture - Login")
+4)    @Story("SBC-5252")
+5)    @Step("Verify loging step")
+6)    @Severity(SeverityLevel.BLOCKER)      
+               
+
+********************************************************************************************************************************************************************
+
+
+
+
+  
